@@ -1,7 +1,5 @@
 package myAccounts;
-
 import java.util.Scanner;
-
 public class Account 
 {
     public void checkBal() 
@@ -32,26 +30,15 @@ public class Account
         keyboard.nextLine();
         return balance -= withdrawAmount;
     }
-    
-    /*public double calcInterest(Scanner keyboard)
+    public void calcInterest(Scanner keyboard) 
     {
-        
-            Starting principal
-            Annual contriubution?
-            Monthly contribution?
-            Contribute at the beginning or the end of compounding period
-            interest rate compound interval?
-            Time range?
-            Tax rate?
-            Inflation rate?
-        
-    }*/
-    
+        Interest inter = new Interest();
+	}
+
     public String exitMessage()
     {
         String exitmessage = "Thank you for banking with us.";
         return exitmessage;
-
     }
     
     private 

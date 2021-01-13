@@ -23,13 +23,13 @@ public class BankAccount
                     acc.withdraw(keyboard);
                     break;
                 case 4:
-                   // viewPrevTrans();
+                   // acc.viewPrevTrans();
                     break;
                 case 5:
-                    //calcInterest();
+                    acc.calcInterest(keyboard);
                     break;
                 case 6:
-                    //exitMessage();
+                    acc.exitMessage();
                     break;
             }
         }
