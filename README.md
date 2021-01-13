@@ -1,3 +1,0 @@
-# BankAccount
-
-My programming sucks :)
