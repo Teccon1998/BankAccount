@@ -1,18 +1,20 @@
 package myAccounts;
 import java.util.Scanner;
-public class Interest {
+public class Interest 
+{
     
     public void calculate()
     {
 
     }
-    public void interestAmt(Scanner keyboard)
+    public double interestAmt(Scanner keyboard)
     {
-        System.out.print("What is the principal investment?: ");
-        startPrinc = keyboard.nextDouble();
-        keyboard.nextLine();
+        // System.out.print("What is the principal investment?: ");
+        // startPrinc = keyboard.nextDouble();
+        // keyboard.nextLine();
 
-        
+        double endBal = startPrinc* (1 + (interest));
+        return endBal;
     }
 
 
@@ -26,6 +28,4 @@ public class Interest {
     double taxRate;
     double inflationRate;
     int term;
-    
-
 }
