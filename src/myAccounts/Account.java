@@ -2,9 +2,9 @@ package myAccounts;
 import java.util.Scanner;
 public class Account 
 {
-    public void checkBal() 
+    public double checkBal() 
     {
-        System.out.println(balance);
+        return balance;
     }
     
     public static double setBal(double bal)
@@ -40,7 +40,16 @@ public class Account
         String exitmessage = "Thank you for banking with us.";
         return exitmessage;
     }
-    
+    public void accName(Scanner keyboard)
+    {
+        System.out.print("Name for the account:");
+        accountName = keyboard.nextLine().toUpperCase();
+    }
+    public void accOwner(Scanner keyboard)
+    {
+        System.out.print("Owner of the account:");
+        accountOwner = keyboard.nextLine().toUpperCase();
+    }
     private 
     double balance = 0;
     String accountName = "NULL";
